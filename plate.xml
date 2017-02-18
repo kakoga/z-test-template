@@ -36,40 +36,29 @@
         </clippings>
         <ingredients>
 
-          <dataset name="featured_in" name_friendly="Services I Offer">
+          <dataset name="social_links" name_friendly="Social Links" >
               <fields>
-                  <text name="name" name_friendly="Name of Feature Logo" required="1" list="1" />
-                  <images name="image" name_friendly="Logo" limit="1" list="1"/>
-                  <text name="url" name_friendly="Link (optional)" limit="1" list="1" />
-                  <sort name="sort_order" name_friendly="Sort Order" list="1" />
+                  <text name="name" name_friendly="Social Media Name" required="1" list="1" />
+                  <text name="font_awesome_icon" name_friendly="Font Awesome Icon Name" required="1" list="1" />
+                  <text name="url" name_friendly="Social Media Link" limit="1" list="1"/>
+                  <sort name="sort" name_friendly="Sort Order" list="1"/>
               </fields>
               <items>
-                  <item link_title="Eyelash Extensions" path_part="">
-                      <name><![CDATA[Eyelash Extensions]]></name>
-                      <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/eyelashes.png]]></image>
-                      <url><![CDATA[]]></url>
-                      <sort_order><![CDATA[1]]></sort_order>
+                  <item link_title="" path_part="">
+                      <name><![CDATA[Facebook]]></name>
+                      <font_awesome_icon><![CDATA[facebook]]></font_awesome_icon>
+                      <url><![CDATA[https://www.facebook.com]]></url>
+                      <sort><![CDATA[1]]></sort>
                   </item>
-                  <item link_title="Microblading" path_part="">
-                      <name><![CDATA[Microblading]]></name>
-                      <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/microbladed-brows.png]]></image>
-                      <url><![CDATA[http://www.example.com]]></url>
-                      <sort_order><![CDATA[2]]></sort_order>
-                  </item>
-                  <item link_title="Waxing" path_part="">
-                      <name><![CDATA[Waxing]]></name>
-                      <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/wax.png]]></image>
-                      <url><![CDATA[http://www.example.com]]></url>
-                      <sort_order><![CDATA[3]]></sort_order>
-                  </item>
-                  <item link_title="Facials" path_part="">
-                      <name><![CDATA[Facials]]></name>
-                      <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/face-mask.png]]></image>
-                      <url><![CDATA[http://www.example.com]]></url>
-                      <sort_order><![CDATA[4]]></sort_order>
+                  <item link_title="" path_part="">
+                    <name><![CDATA[]]></name>
+                    <font_awesome_icon><![CDATA[]]></font_awesome_icon>
+                    <url><![CDATA[]]></url>
+                    <sort><![CDATA[]]></sort>
                   </item>
               </items>
           </dataset>
+
           <dataset name="footer_links" name_friendly="Footer Links">
             <fields>
                 <text name="name" name_friendly="Name" required="1" list="1" />
@@ -185,110 +174,41 @@
               </item>
             </items>
           </templateset>
+          <dataset name="featured_in" name_friendly="Services I Offer" parent_item="about">
+              <fields>
+                  <text name="name" name_friendly="Name of Feature Logo" required="1" list="1" />
+                  <images name="image" name_friendly="Logo" limit="1" list="1"/>
+                  <text name="url" name_friendly="Link (optional)" limit="1" list="1" />
+                  <sort name="sort_order" name_friendly="Sort Order" list="1" />
+              </fields>
+              <items>
+                  <item link_title="Eyelash Extensions" path_part="">
+                      <name><![CDATA[Eyelash Extensions]]></name>
+                      <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/eyelashes.png]]></image>
+                      <url><![CDATA[]]></url>
+                      <sort_order><![CDATA[1]]></sort_order>
+                  </item>
+                  <item link_title="Microblading" path_part="">
+                      <name><![CDATA[Microblading]]></name>
+                      <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/microbladed-brows.png]]></image>
+                      <url><![CDATA[http://www.example.com]]></url>
+                      <sort_order><![CDATA[2]]></sort_order>
+                  </item>
+                  <item link_title="Waxing" path_part="">
+                      <name><![CDATA[Waxing]]></name>
+                      <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/wax.png]]></image>
+                      <url><![CDATA[http://www.example.com]]></url>
+                      <sort_order><![CDATA[3]]></sort_order>
+                  </item>
+                  <item link_title="Facials" path_part="">
+                      <name><![CDATA[Facials]]></name>
+                      <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/face-mask.png]]></image>
+                      <url><![CDATA[http://www.example.com]]></url>
+                      <sort_order><![CDATA[4]]></sort_order>
+                  </item>
+              </items>
+          </dataset>
           <!-- 3. Contact Us -->
-          <templateset name="contact_us" name_friendly="Contact Us" view="contact_us">
-            <fields>
-              <text name="title" name_friendly="Title" />
-              <text name="location_name" name_friendly="Location Name" />
-              <text name="address" name_friendly="Street Address" />
-              <text name="city" name_friendly="City" />
-              <text name="state" name_friendly="State" />
-              <text name="zip" name_friendly="Zip Code" />
-              <text name="phone" name_friendly="Phone" />
-              <text name="fax" name_friendly="Fax Number" />
-              <text name="email" name_friendly="Email" />
-              <textarea name="link_to_map" name_friendly="Link to Google Map Page" />
-              <images name="backup_photo" name_friendly="Image (will only show if there is not a Google Maps Embed link)" />
-            </fields>
-            <items>
-              <item link_title="Contact Us" path_part="contact-us" parent_item="contact-us">
-                  <title><![CDATA[]]></title>
-                  <studio_name><![CDATA[]]></studio_name>
-                  <street_address><![CDATA[]]></street_address>
-                  <city><![CDATA[]]></city>
-                  <state><![CDATA[]]></state>
-                  <phone><![CDATA[]]></phone>
-                  <fax><![CDATA[]]></fax>
-                  <email><![CDATA[]]></email>
-                  <google_map_link><![CDATA[]]></google_map_link>
-                  <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/Background-1.jpeg]]></image>
-              </item>
-            </items>
-          </templateset>
-
-          <!-- 2. Book Now -->
-
-          <templateset name="book_now" name_friendly="Book Now" view="book_now" parent_item="contact-us">
-            <fields>
-              <text name="title" name_friendly="Title" />
-              <images name="image" name_friendly="Image" />
-              <textarea name="embed" name_friendly="Acuity iframe Embed Link" />
-              <wysiwyg_advanced name="content" name_friendly="Content" />
-              <yes_no name="book_now_button" name_friendly="Book Now Button?" options="0:Show Button;1:Don't Show Button;"/>
-            </fields>
-            <items>
-              <item link_title="Book Now" path_part="book-now" parent="contact-us">
-                  <title><![CDATA[Book Now]]></title>
-                  <image><![CDATA[]]></image>
-                  <embed><![CDATA[<iframe src="https://app.acuityscheduling.com/schedule.php?owner=13264782" width="100%" height="800" frameBorder="0"></iframe>
-                  <script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" type="text/javascript"></script>]]></embed>
-                  <content><![CDATA[Book your appointment now!]]></content>
-                  <book_now_button><![CDATA[1]]></book_now_button>
-              </item>
-            </items>
-          </templateset>
-          <dataset name="hours_of_operation" name_friendly="Hours of Operation (leave blank if closed)" parent_item="contact-us">
-                 <fields>
-                     <text name="day_of_week" name_friendly="Day of Week" list="1" />
-                     <text name="open" name_friendly="Open" list="1" />
-                     <text name="close" name_friendly="Close" list="1" />
-                     <sort name="sort_order" name_friendly="Sort Order" list="1" />
-                 </fields>
-                 <items>
-                   <item>
-                     <day_of_week><![CDATA[Sunday]]></day_of_week>
-                     <open><![CDATA[9:00]]></open>
-                     <close><![CDATA[3:00]]></close>
-                     <sort_order><![CDATA[1]]></sort_order>
-                   </item>
-                   <item>
-                     <day_of_week><![CDATA[Monday]]></day_of_week>
-                     <open><![CDATA[8:00]]></open>
-                     <close><![CDATA[7:00]]></close>
-                     <sort_order><![CDATA[2]]></sort_order>
-                   </item>
-                   <item>
-                     <day_of_week><![CDATA[Tuesday]]></day_of_week>
-                     <open><![CDATA[8:00]]></open>
-                     <close><![CDATA[7:00]]></close>
-                     <sort_order><![CDATA[3]]></sort_order>
-                   </item>
-                   <item>
-                     <day_of_week><![CDATA[Wednesday]]></day_of_week>
-                     <open><![CDATA[9:00]]></open>
-                     <close><![CDATA[5:00]]></close>
-                     <sort_order><![CDATA[4]]></sort_order>
-                   </item>
-                   <item>
-                     <day_of_week><![CDATA[Thursday]]></day_of_week>
-                     <open><![CDATA[8:00]]></open>
-                     <close><![CDATA[7:00]]></close>
-                     <sort_order><![CDATA[5]]></sort_order>
-                   </item>
-                   <item>
-                     <day_of_week><![CDATA[Friday]]></day_of_week>
-                     <open><![CDATA[8:00]]></open>
-                     <close><![CDATA[7:00]]></close>
-                     <sort_order><![CDATA[6]]></sort_order>
-                   </item>
-                   <item>
-                     <day_of_week><![CDATA[Saturday]]></day_of_week>
-                     <open><![CDATA[9:00]]></open>
-                     <close><![CDATA[3:00]]></close>
-                     <sort_order><![CDATA[7]]></sort_order>
-                   </item>
-                 </items>
-               </dataset>
 
           <!-- Generic page -->
           <templateset name="generic-page" name_friendly="Generic Page" view="generic-page">
@@ -481,28 +401,7 @@
               </item>
             </items>
           </templateset>
-          <dataset name="social_links" name_friendly="Social Links" parent_item="social-media">
-              <fields>
-                  <text name="name" name_friendly="Social Media Name" required="1" list="1" />
-                  <text name="font_awesome_icon" name_friendly="Font Awesome Icon Name" required="1" list="1" />
-                  <text name="url" name_friendly="Social Media Link" limit="1" list="1"/>
-                  <sort name="sort" name_friendly="Sort Order" list="1"/>
-              </fields>
-              <items>
-                  <item link_title="" path_part="">
-                      <name><![CDATA[Facebook]]></name>
-                      <font_awesome_icon><![CDATA[facebook]]></font_awesome_icon>
-                      <url><![CDATA[https://www.facebook.com]]></url>
-                      <sort><![CDATA[1]]></sort>
-                  </item>
-                  <item link_title="" path_part="">
-                    <name><![CDATA[]]></name>
-                    <font_awesome_icon><![CDATA[]]></font_awesome_icon>
-                    <url><![CDATA[]]></url>
-                    <sort><![CDATA[]]></sort>
-                  </item>
-              </items>
-          </dataset>
+
           <!-- blank -->
           <templateset name="new" name_friendly="New" view="new" parent_item="about">
             <fields>
@@ -532,5 +431,109 @@
               </item>
             </items>
           </templateset>
+          <templateset name="contact_us" name_friendly="Contact Us" view="contact_us">
+            <fields>
+              <text name="title" name_friendly="Title" />
+              <text name="location_name" name_friendly="Location Name" />
+              <text name="address" name_friendly="Street Address" />
+              <text name="city" name_friendly="City" />
+              <text name="state" name_friendly="State" />
+              <text name="zip" name_friendly="Zip Code" />
+              <text name="phone" name_friendly="Phone" />
+              <text name="fax" name_friendly="Fax Number" />
+              <text name="email" name_friendly="Email" />
+              <textarea name="link_to_map" name_friendly="Link to Google Map Page" />
+              <images name="backup_photo" name_friendly="Image (will only show if there is not a Google Maps Embed link)" />
+            </fields>
+            <items>
+              <item link_title="Contact Us" path_part="contact-us" parent_item="contact-us">
+                  <title><![CDATA[]]></title>
+                  <studio_name><![CDATA[]]></studio_name>
+                  <street_address><![CDATA[]]></street_address>
+                  <city><![CDATA[]]></city>
+                  <state><![CDATA[]]></state>
+                  <phone><![CDATA[]]></phone>
+                  <fax><![CDATA[]]></fax>
+                  <email><![CDATA[]]></email>
+                  <google_map_link><![CDATA[]]></google_map_link>
+                  <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/Background-1.jpeg]]></image>
+              </item>
+            </items>
+          </templateset>
+
+          <!-- 2. Book Now -->
+
+          <templateset name="book_now" name_friendly="Book Now" view="book_now" parent_item="contact-us">
+            <fields>
+              <text name="title" name_friendly="Title" />
+              <images name="image" name_friendly="Image" />
+              <textarea name="embed" name_friendly="Acuity iframe Embed Link" />
+              <wysiwyg_advanced name="content" name_friendly="Content" />
+              <yes_no name="book_now_button" name_friendly="Book Now Button?" options="0:Show Button;1:Don't Show Button;"/>
+            </fields>
+            <items>
+              <item link_title="Book Now" path_part="book-now" parent="contact-us">
+                  <title><![CDATA[Book Now]]></title>
+                  <image><![CDATA[]]></image>
+                  <embed><![CDATA[<iframe src="https://app.acuityscheduling.com/schedule.php?owner=13264782" width="100%" height="800" frameBorder="0"></iframe>
+                  <script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" type="text/javascript"></script>]]></embed>
+                  <content><![CDATA[Book your appointment now!]]></content>
+                  <book_now_button><![CDATA[1]]></book_now_button>
+              </item>
+            </items>
+          </templateset>
+          <dataset name="hours_of_operation" name_friendly="Hours of Operation (leave blank if closed)" parent_item="contact-us">
+                 <fields>
+                     <text name="day_of_week" name_friendly="Day of Week" list="1" />
+                     <text name="open" name_friendly="Open" list="1" />
+                     <text name="close" name_friendly="Close" list="1" />
+                     <sort name="sort_order" name_friendly="Sort Order" list="1" />
+                 </fields>
+                 <items>
+                   <item>
+                     <day_of_week><![CDATA[Sunday]]></day_of_week>
+                     <open><![CDATA[9:00]]></open>
+                     <close><![CDATA[3:00]]></close>
+                     <sort_order><![CDATA[1]]></sort_order>
+                   </item>
+                   <item>
+                     <day_of_week><![CDATA[Monday]]></day_of_week>
+                     <open><![CDATA[8:00]]></open>
+                     <close><![CDATA[7:00]]></close>
+                     <sort_order><![CDATA[2]]></sort_order>
+                   </item>
+                   <item>
+                     <day_of_week><![CDATA[Tuesday]]></day_of_week>
+                     <open><![CDATA[8:00]]></open>
+                     <close><![CDATA[7:00]]></close>
+                     <sort_order><![CDATA[3]]></sort_order>
+                   </item>
+                   <item>
+                     <day_of_week><![CDATA[Wednesday]]></day_of_week>
+                     <open><![CDATA[9:00]]></open>
+                     <close><![CDATA[5:00]]></close>
+                     <sort_order><![CDATA[4]]></sort_order>
+                   </item>
+                   <item>
+                     <day_of_week><![CDATA[Thursday]]></day_of_week>
+                     <open><![CDATA[8:00]]></open>
+                     <close><![CDATA[7:00]]></close>
+                     <sort_order><![CDATA[5]]></sort_order>
+                   </item>
+                   <item>
+                     <day_of_week><![CDATA[Friday]]></day_of_week>
+                     <open><![CDATA[8:00]]></open>
+                     <close><![CDATA[7:00]]></close>
+                     <sort_order><![CDATA[6]]></sort_order>
+                   </item>
+                   <item>
+                     <day_of_week><![CDATA[Saturday]]></day_of_week>
+                     <open><![CDATA[9:00]]></open>
+                     <close><![CDATA[3:00]]></close>
+                     <sort_order><![CDATA[7]]></sort_order>
+                   </item>
+                 </items>
+               </dataset>
+
         </ingredients>
     </plate>
