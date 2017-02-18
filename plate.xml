@@ -37,9 +37,11 @@
         <ingredients>
           <dataset name="nav" name_friendly="nav">
             <fields>
+              <text name="nope" name_friendly="nope">
             </fields>
             <items>
               <item link_title="" path_part="">
+                <nope><![CDATA[]]></nope>
               </item>
             </items>
           </dataset>
