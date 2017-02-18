@@ -452,6 +452,18 @@
             </items>
           </templateset>
           <!-- blank -->
+          <templateset name="new" name_friendly="New" view="new" parent_item="about">
+            <fields>
+              <text name="name" name_friendly="Name" />
+              <images name="image" name_friendly="Image" />
+            </fields>
+            <items>
+              <item link_title="New" path_part="new" parent="about">
+                <name><![CDATA[]]></name>
+                <image><![CDATA[]]></image>
+              </item>
+            </items>
+          </templateset>
           <templateset name="blank" name_friendly="Blank" view="blank" parent_item="about">
             <fields>
               <text name="title" name_friendly="Title" />
