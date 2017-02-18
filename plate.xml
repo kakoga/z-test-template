@@ -187,7 +187,7 @@
           </templateset>
           <!-- 2. Book Now -->
 
-          <templateset name="book_now" name_friendly="Book Now" view="book_now" parent_item="contact_us">
+          <templateset name="book_now" name_friendly="Book Now" view="book_now" parent_item="contact-us">
             <fields>
               <text name="title" name_friendly="Title" />
               <images name="image" name_friendly="Image" />
@@ -196,7 +196,7 @@
               <yes_no name="book_now_button" name_friendly="Book Now Button?" options="0:Show Button;1:Don't Show Button;"/>
             </fields>
             <items>
-              <item link_title="Book Now" path_part="book-now" parent="contact_us">
+              <item link_title="Book Now" path_part="book-now" parent="contact-us">
                   <title><![CDATA[Book Now]]></title>
                   <image><![CDATA[]]></image>
                   <embed><![CDATA[<iframe src="https://app.acuityscheduling.com/schedule.php?owner=13264782" width="100%" height="800" frameBorder="0"></iframe>
