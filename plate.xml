@@ -494,22 +494,10 @@
                       <sort><![CDATA[1]]></sort>
                   </item>
                   <item link_title="" path_part="">
-                      <name><![CDATA[Pinterest]]></name>
-                      <font_awesome_icon><![CDATA[pinterest]]></font_awesome_icon>
-                      <url><![CDATA[https://www.pinterest.com]]></url>
-                      <sort><![CDATA[2]]></sort>
-                  </item>
-                  <item link_title="" path_part="">
-                      <name><![CDATA[Instagram]]></name>
-                      <font_awesome_icon><![CDATA[instagram]]></font_awesome_icon>
-                      <url><![CDATA[https://www.instagram.com]]></url>
-                      <sort><![CDATA[3]]></sort>
-                  </item>
-                  <item link_title="" path_part="">
-                      <name><![CDATA[Twitter]]></name>
-                      <font_awesome_icon><![CDATA[twitter]]></font_awesome_icon>
-                      <url><![CDATA[https://www.twitter.com]]></url>
-                      <sort><![CDATA[4]]></sort>
+                    <name><![CDATA[]]></name>
+                    <font_awesome_icon><![CDATA[]]></font_awesome_icon>
+                    <url><![CDATA[]]></url>
+                    <sort><![CDATA[]]></sort>
                   </item>
               </items>
           </dataset>
