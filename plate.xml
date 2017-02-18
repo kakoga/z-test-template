@@ -35,7 +35,14 @@
           <fontawesome name="fontawesome_icon" name_friendly="My Fontawesome Icon (get icon from http://fontawesome.io/icons/)"><![CDATA[fa-calendar-check-o]]></fontawesome>
         </clippings>
         <ingredients>
-
+          <dataset name="nav" name_friendly="nav">
+            <fields>
+            </fields>
+            <items>
+              <item link_title="" path_part="">
+              </item>
+            </items>
+          </dataset>
           <dataset name="social_links" name_friendly="Social Links" >
               <fields>
                   <text name="name" name_friendly="Social Media Name" required="1" list="1" />
