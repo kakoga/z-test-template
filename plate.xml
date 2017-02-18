@@ -154,7 +154,37 @@
               </item>
             </items>
           </dataset>
-
+          <!-- 8. About -->
+          <templateset name="about" name_friendly="About" view="about">
+            <fields>
+              <text name="title" name_friendly="Title" />
+              <images name="image" name_friendly="Image" />
+              <wysiwyg_advanced name="top_content" name_friendly="Top Content" />
+              <textarea name="blockquote" name_friendly="Blockquote Text" />
+              <wysiwyg_advanced name="bottom_content" name_friendly="Bottom Content" />
+            </fields>
+            <items>
+              <item link_title="About" path_part="about">
+                  <title><![CDATA[About Me]]></title>
+                  <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/Background-1.jpeg]]></image>
+                  <top_content>
+                    <![CDATA[<p>The About page is the section of a website where people go to find out about the website   they&rsquo;re on.</p>
+                    <p>Readers will visit this section for many reasons and with various questions they want answered, but your objective is the same: to inform them why they are on the site or why they should be on the site.</p>]]>
+                  </top_content>
+                  <blockquote><![CDATA[Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning.]]></blockquote>
+                  <bottom_content><![CDATA[<h3>Provide the Basics at the Top as an Overview</h3>
+                  <p>Your About page should answer the <a href="http://en.wikipedia.org/wiki/Five_Ws">Five Ws</a>:</p>
+                  <ul>
+                  <li><strong>Who</strong> are you?</li>
+                  <li><strong>What</strong> do you do?</li>
+                  <li><strong>When</strong> did you start doing what you&rsquo;re doing?</li>
+                  <li><strong>Where</strong> are you?</li>
+                  <li><strong>How</strong> are you accomplishing what you claim to do?</li>
+                  </ul>
+                  <p><a href="http://sixrevisions.com/content-strategy/about-page-guidelines/">Read More about Writing a great About Page</a></p>]]></bottom_content>
+              </item>
+            </items>
+          </templateset>
           <!-- 3. Contact Us -->
           <templateset name="contact_us" name_friendly="Contact Us" view="contact_us">
             <fields>
@@ -185,6 +215,7 @@
               </item>
             </items>
           </templateset>
+
           <!-- 2. Book Now -->
 
           <templateset name="book_now" name_friendly="Book Now" view="book_now" parent_item="contact-us">
@@ -420,50 +451,21 @@
               </item>
             </items>
           </pageset>
-          <!-- 8. About -->
-          <templateset name="about" name_friendly="About" view="about">
-            <fields>
-              <text name="title" name_friendly="Title" />
-              <images name="image" name_friendly="Image" />
-              <wysiwyg_advanced name="top_content" name_friendly="Top Content" />
-              <textarea name="blockquote" name_friendly="Blockquote Text" />
-              <wysiwyg_advanced name="bottom_content" name_friendly="Bottom Content" />
-            </fields>
-            <items>
-              <item link_title="About" path_part="about">
-                  <title><![CDATA[About Me]]></title>
-                  <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/Background-1.jpeg]]></image>
-                  <top_content>
-                    <![CDATA[<p>The About page is the section of a website where people go to find out about the website   they&rsquo;re on.</p>
-                    <p>Readers will visit this section for many reasons and with various questions they want answered, but your objective is the same: to inform them why they are on the site or why they should be on the site.</p>]]>
-                  </top_content>
-                  <blockquote><![CDATA[Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning.]]></blockquote>
-                  <bottom_content><![CDATA[<h3>Provide the Basics at the Top as an Overview</h3>
-                  <p>Your About page should answer the <a href="http://en.wikipedia.org/wiki/Five_Ws">Five Ws</a>:</p>
-                  <ul>
-                  <li><strong>Who</strong> are you?</li>
-                  <li><strong>What</strong> do you do?</li>
-                  <li><strong>When</strong> did you start doing what you&rsquo;re doing?</li>
-                  <li><strong>Where</strong> are you?</li>
-                  <li><strong>How</strong> are you accomplishing what you claim to do?</li>
-                  </ul>
-                  <p><a href="http://sixrevisions.com/content-strategy/about-page-guidelines/">Read More about Writing a great About Page</a></p>]]></bottom_content>
-              </item>
-            </items>
-          </templateset>
-
-          <templateset name="blank" name_friendly="Blank" view="blank" parent_item="about">
+          <templateset name="blank" name_friendly="Blank" view="blank" >
             <fields>
               <text name="title" name_friendly="Title" />
               <images name="image" name_friendly="Image" />
             </fields>
             <items>
-              <item link_title="Blank" path_part="blank" parent="about">
+              <item link_title="Blank" path_part="blank" >
                   <title><![CDATA[Blank test page.]]></title>
                   <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/Background-1.jpeg]]></image>
               </item>
             </items>
           </templateset>
+
+
+
           <!-- 6. Social Media  -->
           <templateset name="social-media" name_friendly="Social Media Page" view="social-media">
             <fields>
