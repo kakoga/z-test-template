@@ -451,6 +451,19 @@
               </item>
             </items>
           </templateset>
+          <!-- blank -->
+          <templateset name="blank" name_friendly="Blank" view="blank" parent_item="about">
+            <fields>
+              <text name="title" name_friendly="Title" />
+              <images name="image" name_friendly="Image" />
+            </fields>
+            <items>
+              <item link_title="Blank" path_part="blank" parent="about">
+                  <title><![CDATA[Blank test page.]]></title>
+                  <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/Background-1.jpeg]]></image>
+              </item>
+            </items>
+          </templateset>
           <!-- 6. Social Media  -->
           <templateset name="social-media" name_friendly="Social Media Page" view="social-media">
             <fields>
@@ -500,18 +513,6 @@
                   </item>
               </items>
           </dataset>
-          <!-- blank -->
-          <templateset name="blank" name_friendly="Blank" view="blank">
-            <fields>
-              <text name="title" name_friendly="Title" />
-              <images name="image" name_friendly="Image" />
-            </fields>
-            <items>
-              <item link_title="Blank" path_part="blank">
-                  <title><![CDATA[Blank test page.]]></title>
-                  <image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/Background-1.jpeg]]></image>
-              </item>
-            </items>
-          </templateset>
+
         </ingredients>
     </plate>
