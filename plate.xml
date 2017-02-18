@@ -35,40 +35,7 @@
           <fontawesome name="fontawesome_icon" name_friendly="My Fontawesome Icon (get icon from http://fontawesome.io/icons/)"><![CDATA[fa-calendar-check-o]]></fontawesome>
         </clippings>
         <ingredients>
-          <dataset name="social_links" name_friendly="Social Links">
-              <fields>
-                  <text name="name" name_friendly="Social Media Name" required="1" list="1" />
-                  <text name="font_awesome_icon" name_friendly="Font Awesome Icon Name" required="1" list="1" />
-                  <text name="url" name_friendly="Social Media Link" limit="1" list="1"/>
-                  <sort name="sort" name_friendly="Sort Order" list="1"/>
-              </fields>
-              <items>
-                  <item link_title="" path_part="">
-                      <name><![CDATA[Facebook]]></name>
-                      <font_awesome_icon><![CDATA[facebook]]></font_awesome_icon>
-                      <url><![CDATA[https://www.facebook.com]]></url>
-                      <sort><![CDATA[1]]></sort>
-                  </item>
-                  <item link_title="" path_part="">
-                      <name><![CDATA[Pinterest]]></name>
-                      <font_awesome_icon><![CDATA[pinterest]]></font_awesome_icon>
-                      <url><![CDATA[https://www.pinterest.com]]></url>
-                      <sort><![CDATA[2]]></sort>
-                  </item>
-                  <item link_title="" path_part="">
-                      <name><![CDATA[Instagram]]></name>
-                      <font_awesome_icon><![CDATA[instagram]]></font_awesome_icon>
-                      <url><![CDATA[https://www.instagram.com]]></url>
-                      <sort><![CDATA[3]]></sort>
-                  </item>
-                  <item link_title="" path_part="">
-                      <name><![CDATA[Twitter]]></name>
-                      <font_awesome_icon><![CDATA[twitter]]></font_awesome_icon>
-                      <url><![CDATA[https://www.twitter.com]]></url>
-                      <sort><![CDATA[4]]></sort>
-                  </item>
-              </items>
-          </dataset>
+
           <dataset name="featured_in" name_friendly="Services I Offer">
               <fields>
                   <text name="name" name_friendly="Name of Feature Logo" required="1" list="1" />
@@ -498,5 +465,39 @@
               </item>
             </items>
           </templateset>
+          <dataset name="social_links" name_friendly="Social Links" parent_item="social-media">
+              <fields>
+                  <text name="name" name_friendly="Social Media Name" required="1" list="1" />
+                  <text name="font_awesome_icon" name_friendly="Font Awesome Icon Name" required="1" list="1" />
+                  <text name="url" name_friendly="Social Media Link" limit="1" list="1"/>
+                  <sort name="sort" name_friendly="Sort Order" list="1"/>
+              </fields>
+              <items>
+                  <item link_title="" path_part="">
+                      <name><![CDATA[Facebook]]></name>
+                      <font_awesome_icon><![CDATA[facebook]]></font_awesome_icon>
+                      <url><![CDATA[https://www.facebook.com]]></url>
+                      <sort><![CDATA[1]]></sort>
+                  </item>
+                  <item link_title="" path_part="">
+                      <name><![CDATA[Pinterest]]></name>
+                      <font_awesome_icon><![CDATA[pinterest]]></font_awesome_icon>
+                      <url><![CDATA[https://www.pinterest.com]]></url>
+                      <sort><![CDATA[2]]></sort>
+                  </item>
+                  <item link_title="" path_part="">
+                      <name><![CDATA[Instagram]]></name>
+                      <font_awesome_icon><![CDATA[instagram]]></font_awesome_icon>
+                      <url><![CDATA[https://www.instagram.com]]></url>
+                      <sort><![CDATA[3]]></sort>
+                  </item>
+                  <item link_title="" path_part="">
+                      <name><![CDATA[Twitter]]></name>
+                      <font_awesome_icon><![CDATA[twitter]]></font_awesome_icon>
+                      <url><![CDATA[https://www.twitter.com]]></url>
+                      <sort><![CDATA[4]]></sort>
+                  </item>
+              </items>
+          </dataset>
         </ingredients>
     </plate>
