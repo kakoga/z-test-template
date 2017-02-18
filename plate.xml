@@ -80,8 +80,7 @@
                   <images name="hero_image" name_friendly="Hero Image (Default image if feature article has no image)" limit="1" />
                   <text name="social_section_title" name_friendly="Social Section Title" required="1" />
                   <text name="social_section_button_text" name_friendly="Social Section Button Text" required="1" />
-                  <text name="timeline_title" name_friendly="Timeline Title" required="1" />
-                  <text name="timeline_subtitle" name_friendly="Timeline Subtitle" required="1" />
+                  
                   <text name="button_text_3" name_friendly="Button Text (Section 3)" required="1" />
                   <text name="title4" name_friendly="Title (Section 4)" required="1" />
                   <text name="sub_title4" name_friendly="Sub Title (Section 4)" required="1" />
@@ -95,8 +94,7 @@
                       <hero_image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/Background-2.jpeg]]></hero_image>
                       <social_section_title><![CDATA[Social Feed Title]]></social_section_title>
                       <social_section_button_text><![CDATA[See More Posts]]></social_section_button_text>
-                      <timeline_title><![CDATA[Who Are Lashes For?]]></timeline_title>
-                      <timeline_subtitle><![CDATA[Everyone, really! Check these out to see where you fit in.]]></timeline_subtitle>
+
                       <button_text_3><![CDATA[Share This!]]></button_text_3>
                       <title4><![CDATA[Lashes Change Lives!]]></title4>
                       <sub_title4><![CDATA[We could tell you, but we'll let our customers do the talking. ]]></sub_title4>
@@ -120,20 +118,7 @@
                 <bubble_blurb><![CDATA[The on-the-go mom should most definitely treat herself to eyelash extensions! Make mornings easier and always look and feel beautiful!]]></bubble_blurb>
                 <sort_order><![CDATA[1]]></sort_order>
               </item>
-              <item link_title="" path_part="">
-                <bubble_title><![CDATA[The Always On Entrepreneur]]></bubble_title>
-                <bubble_subtitle><![CDATA[]]></bubble_subtitle>
-                <bubble_image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/Always-On-Entrepreneur.jpg]]></bubble_image>
-                <bubble_blurb><![CDATA[Always running around? Rushing from meeting to meeting? You go, superstar. Keep your lashes as amazing as you 24/7!]]></bubble_blurb>
-                <sort_order><![CDATA[2]]></sort_order>
-              </item>
-              <item link_title="" path_part="">
-                <bubble_title><![CDATA[The Pamperer]]></bubble_title>
-                <bubble_subtitle><![CDATA[]]></bubble_subtitle>
-                <bubble_image><![CDATA[https://b303cb5a6ddab7801c2a-56060891ad29dbcef161dcd34aa106bb.ssl.cf2.rackcdn.com/The-Pamperer.jpg]]></bubble_image>
-                <bubble_blurb><![CDATA[Treat yo'self. Why not?]]></bubble_blurb>
-                <sort_order><![CDATA[3]]></sort_order>
-              </item>
+
               <item link_title="" path_part="">
                 <bubble_title><![CDATA[The Squad]]></bubble_title>
                 <bubble_subtitle><![CDATA[]]></bubble_subtitle>
