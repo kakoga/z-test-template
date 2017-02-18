@@ -58,7 +58,21 @@
                   </item>
               </items>
           </dataset>
-
+          <dataset name="custom_form_fields" name_friendly="Custom Form Fields">
+                      <fields>
+                        <text name="custom_field_name" name_friendly="Custom Form Name" required="1" list="1"/>
+                        <yes_no name="field_type_toggle" name_friendly="Field Type (text: 150 character limit; textarea: unlimited)" options="0:Text;1:Textarea;"  list="1"/>
+                        <sort name="sort_order" name_friendly="Sort Order" list="1" />
+                      </fields>
+                      <!-- add example comment field in -->
+                      <items>
+                        <item>
+                          <custom_field_name><![CDATA[Comments]]></custom_field_name>
+                          <field_type_toggle><![CDATA[1]]></field_type_toggle>
+                          <sort_order><![CDATA[1]]></sort_order>
+                        </item>
+                      </items>
+                    </dataset>
           <dataset name="footer_links" name_friendly="Footer Links">
             <fields>
                 <text name="name" name_friendly="Name" required="1" list="1" />
@@ -80,7 +94,7 @@
                   <images name="hero_image" name_friendly="Hero Image (Default image if feature article has no image)" limit="1" />
                   <text name="social_section_title" name_friendly="Social Section Title" required="1" />
                   <text name="social_section_button_text" name_friendly="Social Section Button Text" required="1" />
-                  
+
                   <text name="button_text_3" name_friendly="Button Text (Section 3)" required="1" />
                   <text name="title4" name_friendly="Title (Section 4)" required="1" />
                   <text name="sub_title4" name_friendly="Sub Title (Section 4)" required="1" />
