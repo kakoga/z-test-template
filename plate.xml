@@ -516,5 +516,21 @@
               </item>
             </items>
           </templateset>
+          <templateset name="somepage" name_friendly="Somepage" view="somepage" parent_item="">
+            <fields>
+              <text name="name" name_friendly="Name" />
+              <images name="image" name_friendly="Image" />
+              <text name="bigger" name_friendly="Bigger" />
+              <sort name="sort_order" name_friendly="Sort Order" />
+            </fields>
+            <items>
+              <item link_title="New" path_part="new" parent="">
+                <name><![CDATA[]]></name>
+                <image><![CDATA[]]></image>
+                <bigger><![CDATA[]]></bigger>
+                <sort_order><![CDATA[]]></sort_order>
+              </item>
+            </items>
+          </templateset>
         </ingredients>
     </plate>
