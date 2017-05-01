@@ -518,6 +518,15 @@
               <textarea name="embed" name_friendly="Acuity iframe Embed Link" />
               <wysiwyg_advanced name="content" name_friendly="Content" />
               <yes_no name="book_now_button" name_friendly="Book Now Button?" options="0:Show Button;1:Don't Show Button;"/>
+              <number name="number_field" name_friendly="Number Field" />
+              <link name="link_field" name_friendly="Link Field" />
+              <files name="files_field" name_friendly="Files Field" />
+              <datetime name="datetime_field" name_friendly="Datetime Field" />
+              <date name="date_field" name_friendly="Date Field" />
+              <currency name="currency_field" name_friendly="Currency Field" />
+              <color name="color_field" name_friendly="color_field" />
+              <brandistry name="brandistry_field" name_friendly="Brandistry Field" />
+              <article_writer name="articlewriter_field" name_friendly="Article Writer Field" />
             </fields>
             <items>
               <item link_title="Book Now" path_part="book-now" parent="contact-us">
@@ -527,6 +536,15 @@
                   <script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" type="text/javascript"></script>]]></embed>
                   <content><![CDATA[Book your appointment now!]]></content>
                   <book_now_button><![CDATA[1]]></book_now_button>
+                  <number_field><![CDATA[]]></number_field>
+                  <link_field><![CDATA[]]></link_field>
+                  <files_field><![CDATA[]]></files_field>
+                  <datetime_field><![CDATA[]]></datetime_field>
+                  <date_field><![CDATA[]]></date_field>
+                  <currency_field><![CDATA[]]></currency_field>
+                  <color_field><![CDATA[]]></color_field>
+                  <brandistry_field><![CDATA[]]></brandistry_field>
+                  <articlewriter_field><![CDATA[]]></articlewriter_field>
               </item>
             </items>
           </templateset>
