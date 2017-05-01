@@ -496,8 +496,8 @@
             <items>
               <item link_title="Contact Us" path_part="contact-us" parent_item="contact-us">
                   <title><![CDATA[]]></title>
-                  <studio_name><![CDATA[]]></studio_name>
-                  <street_address><![CDATA[]]></street_address>
+                  <location_name><![CDATA[]]></location_name>
+                  <address><![CDATA[]]></address>
                   <city><![CDATA[]]></city>
                   <state><![CDATA[]]></state>
                   <phone><![CDATA[]]></phone>
