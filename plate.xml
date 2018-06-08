@@ -687,7 +687,7 @@
                   <sort name="sort_order" name_friendly="Sort Order" required="1" list="1" />
               </fields>
               <items>
-                <item link_title="General Health" path_part="general-health" parent="services">
+                <item link_title="General Health" path_part="general-health" parent="vet-services">
                   <page_title><![CDATA[General Health]]></page_title>
                   <main_image><![CDATA[https://cdb368edefc437a74249-428b2f4da1bce612540a137d021c11ad.ssl.cf2.rackcdn.com/services-general-health.rycZnuI_l.jpeg]]></main_image>
                   <body_text><![CDATA[
