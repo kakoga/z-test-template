@@ -1,4 +1,4 @@
-<div id="testimonials">
+<div id="links">
 	<div class="body-container">
 		<div class="container">
 			<div class="body-content" >
@@ -16,22 +16,18 @@
 						</div>
 						{{ end-if }}
 						<div class="body-text" >
-							<h5>{{ page.body_text }}</h5>
+							{{ page.body_text }}
 						</div>
-						{{ each client_testimonials as ct sort by ct.sort_order }}
-						<div class="row">
-							<div class="col-md-12">
-								<p>{{ ct.client_testimonial }}</p>
-								<p><em>{{ ct.client_first_name }} {{ ct.client_last_name }}</em></p>
-								<p>{{ ct.client_location }}</p>
-								<hr>
-							</div>
-						</div>
+						{{ each external_links as link sort by link.sort_order }}
+						<ul>
+							<li><a href="{{ link.link_url }}">{{ link.link_title }}</a></li>
+						</ul>
 						{{ end-each }}
 					</div>
 					<div class="desktop">
 						<div class="col-md-4" >
 							{{ include sectionlinks }}
+							{{ include inner-page-sidebar }}
 						</div>
 					</div>
 				</div>

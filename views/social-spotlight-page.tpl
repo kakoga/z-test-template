@@ -6,10 +6,15 @@
                 <div class="col-lg-12 text-center">
 					<h2 class="section-heading">{{page.title}}</h2>
 					<h3 class="section-subheading text-muted">{{page.content}}</h3>
-					{{page.embed_code}}
                 </div>
             </div>
 	    <div class="row">
+		    
+			{{each social_feed as social order by order by z.sort}}
+			
+			{{include social-loop}}
+			
+			{{end-each}}
         </div>
 	    
     </div>

@@ -1,4 +1,4 @@
-<div id="testimonials">
+<div id="breeder-questions">
 	<div class="body-container">
 		<div class="container">
 			<div class="body-content" >
@@ -16,22 +16,22 @@
 						</div>
 						{{ end-if }}
 						<div class="body-text" >
-							<h5>{{ page.body_text }}</h5>
+							{{ page.body_text }}
 						</div>
-						{{ each client_testimonials as ct sort by ct.sort_order }}
+						{{ each breeder_q as question sort by question.sort_order }}
 						<div class="row">
 							<div class="col-md-12">
-								<p>{{ ct.client_testimonial }}</p>
-								<p><em>{{ ct.client_first_name }} {{ ct.client_last_name }}</em></p>
-								<p>{{ ct.client_location }}</p>
-								<hr>
+								<p>{{ question.question }}</p>
+								<p>{{ question.answer }}</p>
+								<hr/>
 							</div>
 						</div>
-						{{ end-each }}
+						{{end-each }}
 					</div>
 					<div class="desktop">
 						<div class="col-md-4" >
 							{{ include sectionlinks }}
+							{{ include inner-page-sidebar }}
 						</div>
 					</div>
 				</div>

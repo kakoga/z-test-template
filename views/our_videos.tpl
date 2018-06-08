@@ -1,4 +1,4 @@
-<div id="testimonials">
+<div id="our-videos">
 	<div class="body-container">
 		<div class="container">
 			<div class="body-content" >
@@ -16,22 +16,26 @@
 						</div>
 						{{ end-if }}
 						<div class="body-text" >
-							<h5>{{ page.body_text }}</h5>
+							{{ page.body_text }}
 						</div>
-						{{ each client_testimonials as ct sort by ct.sort_order }}
 						<div class="row">
-							<div class="col-md-12">
-								<p>{{ ct.client_testimonial }}</p>
-								<p><em>{{ ct.client_first_name }} {{ ct.client_last_name }}</em></p>
-								<p>{{ ct.client_location }}</p>
-								<hr>
-							</div>
+							{{ each about_us_videos as video sort by video.sort_order }}
+							{{ if {index} % 2 == 1 && $count != 1 }}
 						</div>
-						{{ end-each }}
+						<div class="row">
+							{{ end-if }}
+							<div class="col-md-6">
+								<iframe class="ytplayer" type="text/html" width="100%" src="https://www.youtube.com/embed/{{ video.youtube_id }}?rel=0" frameborder="0"></iframe>
+								<p class="large">{{ video.video_title }}</p>
+								<p>{{ video.video_description}}</p>
+							</div>
+							{{ end-each }}
+						</div>
 					</div>
 					<div class="desktop">
 						<div class="col-md-4" >
 							{{ include sectionlinks }}
+							{{ include inner-page-sidebar }}
 						</div>
 					</div>
 				</div>

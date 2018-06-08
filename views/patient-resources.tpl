@@ -1,4 +1,4 @@
-<div id="testimonials">
+<div id="patient-resources">
 	<div class="body-container">
 		<div class="container">
 			<div class="body-content" >
@@ -15,23 +15,12 @@
 							<img class="main-image" src="{{ page.main_image.getImage(800,400,crop) }}" />
 						</div>
 						{{ end-if }}
-						<div class="body-text" >
-							<h5>{{ page.body_text }}</h5>
-						</div>
-						{{ each client_testimonials as ct sort by ct.sort_order }}
-						<div class="row">
-							<div class="col-md-12">
-								<p>{{ ct.client_testimonial }}</p>
-								<p><em>{{ ct.client_first_name }} {{ ct.client_last_name }}</em></p>
-								<p>{{ ct.client_location }}</p>
-								<hr>
-							</div>
-						</div>
-						{{ end-each }}
+						{{ page.body_text }}
 					</div>
 					<div class="desktop">
 						<div class="col-md-4" >
 							{{ include sectionlinks }}
+							{{ include inner-page-sidebar }}
 						</div>
 					</div>
 				</div>

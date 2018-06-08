@@ -1,4 +1,4 @@
-<div id="testimonials">
+<div id="faq">
 	<div class="body-container">
 		<div class="container">
 			<div class="body-content" >
@@ -16,15 +16,15 @@
 						</div>
 						{{ end-if }}
 						<div class="body-text" >
-							<h5>{{ page.body_text }}</h5>
+							{{ page.body_text }}
 						</div>
-						{{ each client_testimonials as ct sort by ct.sort_order }}
-						<div class="row">
-							<div class="col-md-12">
-								<p>{{ ct.client_testimonial }}</p>
-								<p><em>{{ ct.client_first_name }} {{ ct.client_last_name }}</em></p>
-								<p>{{ ct.client_location }}</p>
-								<hr>
+						{{ each frequently_asked_questions as qna sort by qna.sort_order }}
+						<div class="spacer">
+							<div class="row">
+								<div class="col-md-12">
+									<p class="large"><strong>{{ qna.question }}</strong></p>
+									<p>{{ qna.answer }}</p>
+								</div>
 							</div>
 						</div>
 						{{ end-each }}
@@ -32,6 +32,7 @@
 					<div class="desktop">
 						<div class="col-md-4" >
 							{{ include sectionlinks }}
+							{{ include inner-page-sidebar }}
 						</div>
 					</div>
 				</div>
